@@ -1,1 +1,1 @@
-include("ui:benchmark")
+include("ui:mybenchmark")
