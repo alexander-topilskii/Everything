@@ -3,11 +3,13 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="Recycler.app" target="11" />
+      <module name="Recycler.benchmark" target="11" />
       <module name="Recycler.navigation" target="11" />
       <module name="Recycler.page1" target="11" />
       <module name="Recycler.page2" target="11" />
       <module name="Recycler.pages.page1" target="11" />
       <module name="Recycler.pages.page2" target="11" />
+      <module name="Recycler.ui.benchmark" target="11" />
       <module name="Recycler.viewModel" target="11" />
     </bytecodeTargetLevel>
   </component>

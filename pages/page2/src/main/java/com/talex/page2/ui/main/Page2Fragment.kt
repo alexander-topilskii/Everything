@@ -3,14 +3,27 @@ package com.talex.page2.ui.main
 import android.content.Context
 import android.os.Bundle
 import android.view.View
-import androidx.lifecycle.ViewModelProvider
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.talex.page2.R
 
 class Page2Fragment : Fragment(R.layout.main_fragment) {
 
     companion object {
         fun newInstance() = Page2Fragment()
+    }
+
+    private val frameCounter = com.talex.benchmark.FrameCounter()
+
+
+    override fun onStart() {
+        super.onStart()
+        frameCounter.onStart()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        frameCounter.onStop()
     }
 
     private lateinit var viewModel: Page2ViewModel
@@ -25,9 +38,28 @@ class Page2Fragment : Fragment(R.layout.main_fragment) {
 
         with(viewModel) {
             dataLiveData.observe(viewLifecycleOwner) {
-                println("GGGG $it")
+
             }
         }
     }
 
 }
+
+//
+//class FrameCounter : Choreographer.FrameCallback {
+//    var lastTimestamp = 0L
+//
+//    override fun doFrame(currentTimestamp: Long) {
+//        val frameTime = currentTimestamp - lastTimestamp
+//
+//        if(frameTime > droppedFrameThreshold) {
+//            droppedFrames +=frameTime / droppedFrameThreshold
+//            frameListener?.onFramesCounterChanged(droppedFrames)
+//        }
+//
+//        lastTimestamp = currentTimestamp
+//
+//        Choreographer.getInstance().postFrameCallback(this)
+//    }
+//
+//}

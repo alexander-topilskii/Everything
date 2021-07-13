@@ -1,27 +1,12 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("kotlin-android")
 }
 
 android {
-    compileSdk = 30
-    buildToolsVersion = "30.0.3"
-
+    compileSdkVersion(30)
     defaultConfig {
-        applicationId = "com.talex.page2"
-        minSdk = 21
-        targetSdk = 30
-        versionCode = 1
-        versionName = "1.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-        }
+        minSdkVersion(21)
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -36,6 +21,7 @@ dependencies {
 
     implementation(project(":viewModel"))
     implementation(project(":dataProducer"))
+    implementation(project(":ui:benchmark"))
 
     implementation("androidx.core:core-ktx:1.6.0")
     implementation("androidx.appcompat:appcompat:1.3.0")
