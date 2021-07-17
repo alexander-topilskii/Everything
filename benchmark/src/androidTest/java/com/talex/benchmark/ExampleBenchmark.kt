@@ -24,27 +24,55 @@ class ExampleBenchmark {
     @get:Rule
     val benchmarkRule = BenchmarkRule()
 
-
     @Test
-    fun `second_fragment`() {
-        val context = ApplicationProvider.getApplicationContext<Context>()
-        val inflater = LayoutInflater.from(context)
-        val root = FrameLayout(context)
-        val v = benchmarkRule.measureRepeated {
-            inflater.inflate(R.layout.second_fragment, root, false)
-        }
-
-
-    }
-
-
-    @Test
-    fun `main_fragment`() {
+    fun `frame_empty`() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val inflater = LayoutInflater.from(context)
         val root = FrameLayout(context)
         benchmarkRule.measureRepeated {
-            inflater.inflate(R.layout.main_fragment, root, false)
+            inflater.inflate(R.layout.page1_frame_layout_empty, root, false)
         }
     }
+
+    @Test
+    fun `linear_empty`() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val inflater = LayoutInflater.from(context)
+        val root = FrameLayout(context)
+        benchmarkRule.measureRepeated {
+            inflater.inflate(R.layout.page1_linear_layout_empty, root, false)
+        }
+    }
+
+    @Test
+    fun `constraint_empty`() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val inflater = LayoutInflater.from(context)
+        val root = FrameLayout(context)
+        benchmarkRule.measureRepeated {
+            inflater.inflate(R.layout.page1_constraint_layout_empty, root, false)
+        }
+    }
+
+
+    @Test
+    fun `linear_list`() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val inflater = LayoutInflater.from(context)
+        val root = FrameLayout(context)
+         benchmarkRule.measureRepeated {
+            inflater.inflate(R.layout.page1_linear_layout, root, false)
+        }
+    }
+
+    @Test
+    fun `constraint_list`() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val inflater = LayoutInflater.from(context)
+        val root = FrameLayout(context)
+         benchmarkRule.measureRepeated {
+            inflater.inflate(R.layout.page1_constraint_layout, root, false)
+        }
+    }
+
 }

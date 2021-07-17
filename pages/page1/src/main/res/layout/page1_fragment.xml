@@ -11,7 +11,7 @@
         android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Page1Fragment"
+        android:text="Здесь не на что смотреть, зато можно запустить бенчмарки и посмотреть как много времени занимает инфлейтинг той или иной верстки"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
