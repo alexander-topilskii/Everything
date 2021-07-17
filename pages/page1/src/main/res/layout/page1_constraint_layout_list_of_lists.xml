@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  first buttons  -->
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button1_A"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/page1_constraint_list_of_list_button1_B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button1_B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button1_A"
+        app:layout_constraintEnd_toStartOf="@id/page1_constraint_list_of_list_button1_C"
+        app:layout_constraintStart_toEndOf="@id/page1_constraint_list_of_list_button1_A"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button1_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button1_C"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button1_A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/page1_constraint_list_of_list_button1_B"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button1_A" />
+
+    <!--  second  -->
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button2_A"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/page1_constraint_list_of_list_button2_B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page1_constraint_list_of_list_button1_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button2_B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button2_A"
+        app:layout_constraintEnd_toStartOf="@id/page1_constraint_list_of_list_button2_C"
+        app:layout_constraintStart_toEndOf="@id/page1_constraint_list_of_list_button2_A"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button2_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button2_C"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button2_A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/page1_constraint_list_of_list_button2_B"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button2_A" />
+
+    <!--  third  -->
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button3_A"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/page1_constraint_list_of_list_button3_B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page1_constraint_list_of_list_button2_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button3_B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button3_A"
+        app:layout_constraintEnd_toStartOf="@id/page1_constraint_list_of_list_button3_C"
+        app:layout_constraintStart_toEndOf="@id/page1_constraint_list_of_list_button3_A"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button3_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button3_C"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button3_A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/page1_constraint_list_of_list_button3_B"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button3_A" />
+
+    <!--  fourth  -->
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button4_A"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/page1_constraint_list_of_list_button4_B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page1_constraint_list_of_list_button3_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button4_B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button4_A"
+        app:layout_constraintEnd_toStartOf="@id/page1_constraint_list_of_list_button4_C"
+        app:layout_constraintStart_toEndOf="@id/page1_constraint_list_of_list_button4_A"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button4_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button4_C"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button4_A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/page1_constraint_list_of_list_button4_B"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button4_A" />
+
+    <!--  fifth  -->
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button5_A"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/page1_constraint_list_of_list_button5_B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page1_constraint_list_of_list_button4_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button5_B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button5_A"
+        app:layout_constraintEnd_toStartOf="@id/page1_constraint_list_of_list_button5_C"
+        app:layout_constraintStart_toEndOf="@id/page1_constraint_list_of_list_button5_A"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button5_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button5_C"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button5_A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/page1_constraint_list_of_list_button5_B"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button5_A" />
+
+    <!--  sixth  -->
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button6_A"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/page1_constraint_list_of_list_button6_B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page1_constraint_list_of_list_button5_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button6_B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button6_A"
+        app:layout_constraintEnd_toStartOf="@id/page1_constraint_list_of_list_button6_C"
+        app:layout_constraintStart_toEndOf="@id/page1_constraint_list_of_list_button6_A"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button6_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button6_C"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button6_A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/page1_constraint_list_of_list_button6_B"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button6_A" />
+
+    <!--  seventh  -->
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button7_A"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/page1_constraint_list_of_list_button7_B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page1_constraint_list_of_list_button6_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button7_B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button7_A"
+        app:layout_constraintEnd_toStartOf="@id/page1_constraint_list_of_list_button7_C"
+        app:layout_constraintStart_toEndOf="@id/page1_constraint_list_of_list_button7_A"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button7_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button7_C"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button7_A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/page1_constraint_list_of_list_button7_B"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button7_A" />
+
+    <!--  eighth  -->
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button8_A"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/page1_constraint_list_of_list_button8_B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page1_constraint_list_of_list_button7_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button8_B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button8_A"
+        app:layout_constraintEnd_toStartOf="@id/page1_constraint_list_of_list_button8_C"
+        app:layout_constraintStart_toEndOf="@id/page1_constraint_list_of_list_button8_A"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button8_A" />
+
+    <Button
+        android:id="@+id/page1_constraint_list_of_list_button8_C"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_constraint_list_of_list_button8_A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/page1_constraint_list_of_list_button8_B"
+        app:layout_constraintTop_toTopOf="@+id/page1_constraint_list_of_list_button8_A" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -75,4 +75,25 @@ class ExampleBenchmark {
         }
     }
 
+
+    @Test
+    fun `linear_list_of_lists`() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val inflater = LayoutInflater.from(context)
+        val root = FrameLayout(context)
+        benchmarkRule.measureRepeated {
+            inflater.inflate(R.layout.page1_linear_layout_list_of_lists, root, false)
+        }
+    }
+
+    @Test
+    fun `constraint_list_of_lists`() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val inflater = LayoutInflater.from(context)
+        val root = FrameLayout(context)
+        benchmarkRule.measureRepeated {
+            inflater.inflate(R.layout.page1_constraint_layout_list_of_lists, root, false)
+        }
+    }
+
 }
