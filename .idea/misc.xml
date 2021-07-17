@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/app/src/main/res/layout/activity_main.xml" value="0.259375" />
         <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page1/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.25333333333333335" />
         <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page2/src/main/res/layout/main_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page2/src/main/res/layout/motion_test.xml" value="0.264" />
         <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page2/src/main/res/layout/second_fragment.xml" value="0.121875" />
+        <entry key="..\:/Users/alexa/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/simple_list_item_1.xml" value="0.259375" />
       </map>
     </option>
   </component>

@@ -44,22 +44,3 @@ class Page2Fragment : Fragment(R.layout.main_fragment) {
     }
 
 }
-
-//
-//class FrameCounter : Choreographer.FrameCallback {
-//    var lastTimestamp = 0L
-//
-//    override fun doFrame(currentTimestamp: Long) {
-//        val frameTime = currentTimestamp - lastTimestamp
-//
-//        if(frameTime > droppedFrameThreshold) {
-//            droppedFrames +=frameTime / droppedFrameThreshold
-//            frameListener?.onFramesCounterChanged(droppedFrames)
-//        }
-//
-//        lastTimestamp = currentTimestamp
-//
-//        Choreographer.getInstance().postFrameCallback(this)
-//    }
-//
-//}
