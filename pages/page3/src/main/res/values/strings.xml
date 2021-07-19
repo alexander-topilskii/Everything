@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">page3</string>
+    <string name="page3_motion_layout_fragment_name">Page3Fragment</string>
+</resources>

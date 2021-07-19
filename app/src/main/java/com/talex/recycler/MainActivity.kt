@@ -7,6 +7,7 @@ import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import com.talex.page1.Page1Activity
 import com.talex.page2.Page2Activity
+import com.talex.page3.Page3Activity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,8 +16,9 @@ class MainActivity : AppCompatActivity() {
 
 
         val listPages = listOf(
-            "Page 1" to Intent(this, Page1Activity::class.java),
-            "Page 2" to Intent(this, Page2Activity::class.java)
+            "Page 1 Benchmarks" to Intent(this, Page1Activity::class.java),
+            "Page 2 Recycler" to Intent(this, Page2Activity::class.java),
+            "Page 3 Motion" to Intent(this, Page3Activity::class.java)
         )
 
         with(findViewById<ListView>(R.id.navigation_list)) {
