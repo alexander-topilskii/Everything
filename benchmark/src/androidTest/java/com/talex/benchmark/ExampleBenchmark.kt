@@ -75,6 +75,16 @@ class ExampleBenchmark {
         }
     }
 
+    @Test
+    fun `constraint_list_match_parent`() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        val inflater = LayoutInflater.from(context)
+        val root = FrameLayout(context)
+         benchmarkRule.measureRepeated {
+            inflater.inflate(R.layout.page1_constraint_layout_match_parent, root, false)
+        }
+    }
+
 
     @Test
     fun `linear_list_of_lists`() {
