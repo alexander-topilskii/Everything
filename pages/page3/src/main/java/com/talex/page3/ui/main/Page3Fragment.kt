@@ -2,14 +2,10 @@ package com.talex.page3.ui.main
 
 import android.content.Context
 import androidx.lifecycle.ViewModelProvider
-import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.talex.page3.R
 
-class Page3Fragment : Fragment(R.layout.page3_fragment) {
+class Page3Fragment : Fragment(R.layout.page3_large_screen_motion_layout) {
 
     companion object {
         fun newInstance() = Page3Fragment()

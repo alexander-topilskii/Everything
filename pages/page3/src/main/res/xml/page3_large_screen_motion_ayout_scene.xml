@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/page3_screen1_imageView" />
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@layout/page3_large_screen_motion_layout_end_1"
+        app:constraintSetStart="@+id/start">
+        <OnSwipe app:dragDirection="dragUp" />
+    </Transition>
+</MotionScene>

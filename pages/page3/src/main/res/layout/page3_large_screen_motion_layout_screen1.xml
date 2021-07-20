@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.motion.widget.MotionLayout"
+    tools:showIn="@layout/page3_large_screen_motion_layout">
+
+    <ImageView
+        android:id="@+id/page3_screen1_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_btn_speak_now" />
+
+    <Button
+        android:id="@+id/page3_screen1_button_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@id/page3_screen1_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/page3_screen1_imageView"
+        app:layout_constraintStart_toStartOf="@+id/page3_screen1_imageView"
+        app:layout_constraintTop_toTopOf="@+id/page3_screen1_imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/page3_screen1_button_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/page3_screen1_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/page3_screen1_imageView"
+        app:layout_constraintStart_toStartOf="@+id/page3_screen1_imageView" />
+
+
+</merge>
