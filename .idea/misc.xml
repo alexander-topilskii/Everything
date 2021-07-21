@@ -17,6 +17,8 @@
         <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page1/src/main/res/layout/page1_relative_layout.xml" value="0.1" />
         <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page2/src/main/res/layout/main_fragment.xml" value="0.1" />
         <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page2/src/main/res/layout/motion_test.xml" value="0.264" />
+        <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page2/src/main/res/layout/page2_activity.xml" value="0.10555555555555556" />
+        <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page2/src/main/res/layout/page2_item_view_holder.xml" value="0.259375" />
         <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page2/src/main/res/layout/second_fragment.xml" value="0.121875" />
         <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page3/src/main/res/layout/page3_activity.xml" value="0.1259259259259259" />
         <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page3/src/main/res/layout/page3_fragment.xml" value="0.22314814814814815" />
@@ -24,6 +26,7 @@
         <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page3/src/main/res/layout/page3_large_screen_motion_layout.xml" value="0.13148148148148148" />
         <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page3/src/main/res/layout/page3_large_screen_motion_layout_end_1.xml" value="0.1" />
         <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page3/src/main/res/layout/page3_large_screen_motion_layout_screen1.xml" value="0.1" />
+        <entry key="..\:/Users/alexa/AndroidStudioProjects/Recycler/pages/page3/src/main/res/layout/page3_motion_layout_2.xml" value="0.1" />
         <entry key="..\:/Users/alexa/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/simple_list_item_1.xml" value="0.259375" />
       </map>
     </option>
