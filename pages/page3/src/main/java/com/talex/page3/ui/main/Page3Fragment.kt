@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.fragment.app.Fragment
 import com.talex.page3.R
 
-class Page3Fragment : Fragment(R.layout.page3_motion_layout_2) {
+class Page3Fragment : Fragment(R.layout.page3_large_screen_motion_layout) {
 
     companion object {
         fun newInstance() = Page3Fragment()
