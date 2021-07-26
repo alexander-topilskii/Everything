@@ -18,18 +18,18 @@ import org.junit.runner.RunWith
  * output the result. Modify your code to see how it affects performance.
  */
 @RunWith(AndroidJUnit4::class)
-class ExampleBenchmark {
+class TextViewBenchmark {
 
     @get:Rule
     val benchmarkRule = BenchmarkRule()
 
     @Test
-    fun `frame_empty`() {
+    fun `frame_layout_text_view`() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val inflater = LayoutInflater.from(context)
         val root = FrameLayout(context)
         benchmarkRule.measureRepeated {
-            inflater.inflate(R.layout.page1_frame_layout_empty, root, false)
+            inflater.inflate(R.layout.page1_frame_layout_text_view, root, false)
         }
     }
 
@@ -42,7 +42,6 @@ class ExampleBenchmark {
             inflater.inflate(R.layout.page1_frame_text_view, root, false)
         }
     }
-
 
     @Test
     fun `constrint_text_view_0dp`() {
@@ -65,74 +64,22 @@ class ExampleBenchmark {
     }
 
     @Test
-    fun `linear_empty`() {
+    fun `linear_text_view_wrap_content`() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val inflater = LayoutInflater.from(context)
         val root = FrameLayout(context)
         benchmarkRule.measureRepeated {
-            inflater.inflate(R.layout.page1_linear_layout_empty, root, false)
+            inflater.inflate(R.layout.page1_linear_layout_text_view, root, false)
         }
     }
 
     @Test
-    fun `constraint_empty`() {
+    fun `linear_text_view_match_parent`() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val inflater = LayoutInflater.from(context)
         val root = FrameLayout(context)
         benchmarkRule.measureRepeated {
-            inflater.inflate(R.layout.page1_constraint_layout_empty, root, false)
-        }
-    }
-
-
-    @Test
-    fun `linear_list`() {
-        val context = ApplicationProvider.getApplicationContext<Context>()
-        val inflater = LayoutInflater.from(context)
-        val root = FrameLayout(context)
-         benchmarkRule.measureRepeated {
-            inflater.inflate(R.layout.page1_linear_layout, root, false)
-        }
-    }
-
-    @Test
-    fun `constraint_list`() {
-        val context = ApplicationProvider.getApplicationContext<Context>()
-        val inflater = LayoutInflater.from(context)
-        val root = FrameLayout(context)
-         benchmarkRule.measureRepeated {
-            inflater.inflate(R.layout.page1_constraint_layout, root, false)
-        }
-    }
-
-    @Test
-    fun `constraint_list_match_parent`() {
-        val context = ApplicationProvider.getApplicationContext<Context>()
-        val inflater = LayoutInflater.from(context)
-        val root = FrameLayout(context)
-         benchmarkRule.measureRepeated {
-            inflater.inflate(R.layout.page1_constraint_layout_match_parent, root, false)
-        }
-    }
-
-
-    @Test
-    fun `linear_list_of_lists`() {
-        val context = ApplicationProvider.getApplicationContext<Context>()
-        val inflater = LayoutInflater.from(context)
-        val root = FrameLayout(context)
-        benchmarkRule.measureRepeated {
-            inflater.inflate(R.layout.page1_linear_layout_list_of_lists, root, false)
-        }
-    }
-
-    @Test
-    fun `constraint_list_of_lists`() {
-        val context = ApplicationProvider.getApplicationContext<Context>()
-        val inflater = LayoutInflater.from(context)
-        val root = FrameLayout(context)
-        benchmarkRule.measureRepeated {
-            inflater.inflate(R.layout.page1_constraint_layout_list_of_lists, root, false)
+            inflater.inflate(R.layout.page1_linear_layout_text_view_match_parent, root, false)
         }
     }
 
