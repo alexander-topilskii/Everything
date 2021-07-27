@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
-      <module name="Recycler.app" target="11" />
+      <module name="Recycler.app" target="1.8" />
       <module name="Recycler.benchmark" target="11" />
       <module name="Recycler.navigation" target="11" />
       <module name="Recycler.page1" target="11" />
