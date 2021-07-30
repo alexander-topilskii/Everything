@@ -2,48 +2,32 @@ package com.talex.page2.ui.main.recycler
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import androidx.annotation.NonNull
-
-import android.view.LayoutInflater
-import android.view.View
-
-import androidx.annotation.LayoutRes
+import com.talex.page2.ui.main.recycler.secondHolder.SecondViewHolder
 
 
-class MyAdapter : RecyclerView.Adapter<BaseViewHolder>() {
-    var list: List<Any> = emptyList()
+class MyAdapter : RecyclerView.Adapter<BaseViewHolder<Item>>() {
+    var list: List<Item> = emptyList()
 
-
-    val delegatesHolder = DelegatesHolder()
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
-        return delegatesHolder.createViewHolder(viewType, parent)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder<Item> {
+        when(viewType) {
+            MyViewHolder.id -> {
+                return MyViewHolder(parent) as BaseViewHolder<Item>
+            }
+            SecondViewHolder.id -> {
+                return SecondViewHolder(parent) as BaseViewHolder<Item>
+            }
+        }
+        return MyViewHolder(parent) as BaseViewHolder<Item>
     }
 
-    override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: BaseViewHolder<Item>, position: Int) {
         holder.onBind(list[position])
     }
 
+    override fun getItemViewType(position: Int): Int {
+        return list[position].getType()
+    }
+
     override fun getItemCount() = list.size
-
-}
-
-class DelegatesHolder {
-
-    val delegates = mutableListOf<ViewHolderDelegate>().also {
-        it.add(ViewHolderDelegate())
-    }
-
-    fun createViewHolder(viewType: Int, parent: ViewGroup): BaseViewHolder {
-        val id = delegates.find {
-            it.getViewType() == viewType
-        }
-        error("ahaha")
-
-//        return LayoutInflater
-//            .from(parent.context)
-//            .inflate(id, parent, false)
-    }
-
 
 }

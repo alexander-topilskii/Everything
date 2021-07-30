@@ -8,6 +8,9 @@
         android:id="@+id/page2_recyclerview_view_holder_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="alex" />
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:text="alex"
+        android:textSize="24sp" />
 
 </FrameLayout>

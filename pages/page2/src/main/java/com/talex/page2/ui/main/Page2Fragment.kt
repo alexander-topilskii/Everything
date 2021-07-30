@@ -44,7 +44,6 @@ class Page2Fragment : Fragment(R.layout.main_fragment), Counter by FragmentFrame
         }
     }
 
-
     companion object {
         fun newInstance() = Page2Fragment()
     }
