@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/page3_dynamic_motion_fragment_scene__container"
     android:background="@color/white"
     app:layoutDescription="@xml/page3_dynamic_motion_fragment_scene"
     tools:context=".dinamycMotion.DynamicMotionFragment">
