@@ -2,17 +2,29 @@
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page3_dynamic_motion_fragment_scene__container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/page3_dynamic_motion_fragment_scene__container"
     android:background="@color/white"
     app:layoutDescription="@xml/page3_dynamic_motion_fragment_scene"
     tools:context=".dinamycMotion.DynamicMotionFragment">
 
-    <TextView
-        android:id="@+id/page3_dynamic_motion_fragment_scene__text_view"
+    <View
+        android:id="@+id/page3_dynamic_motion_fragment_scene__top_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="5dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/page3_dynamic_motion_fragment_scene__bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/page3_dynamic_motion_fragment_scene__top_view" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
