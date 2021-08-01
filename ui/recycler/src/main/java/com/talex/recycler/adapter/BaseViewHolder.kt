@@ -1,4 +1,4 @@
-package com.talex.page2.ui.main.recycler.adapter
+package com.talex.recycler.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

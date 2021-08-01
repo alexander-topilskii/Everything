@@ -1,8 +1,6 @@
-package com.talex.page2.ui.main.recycler
+package com.talex.recycler.adapter
 
 import android.view.ViewGroup
-import com.talex.page2.ui.main.recycler.adapter.BaseViewHolder
-import com.talex.page2.ui.main.recycler.adapter.Item
 
 interface BaseDelegate<T : Item, VH : BaseViewHolder<T>> {
     fun isForViewType(viewType: Int): Boolean

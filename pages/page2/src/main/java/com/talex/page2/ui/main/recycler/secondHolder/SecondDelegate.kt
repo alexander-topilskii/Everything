@@ -2,7 +2,7 @@ package com.talex.page2.ui.main.recycler.secondHolder
 
 import android.view.ViewGroup
 import com.talex.page2.R
-import com.talex.page2.ui.main.recycler.BaseDelegate
+import com.talex.recycler.adapter.BaseDelegate
 
 class SecondDelegate : BaseDelegate<SecondItem, SecondViewHolder> {
 

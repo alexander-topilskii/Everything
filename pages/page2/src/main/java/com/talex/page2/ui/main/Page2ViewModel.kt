@@ -2,7 +2,7 @@ package com.talex.page2.ui.main
 
 import androidx.lifecycle.MutableLiveData
 import com.talex.dataproducer.Source
-import com.talex.page2.ui.main.recycler.adapter.Item
+import com.talex.recycler.adapter.Item
 import com.talex.page2.ui.main.recycler.firstHolder.FirstItem
 import com.talex.page2.ui.main.recycler.secondHolder.SecondItem
 import com.talex.viewmodel.BaseViewModel

@@ -1,9 +1,7 @@
-package com.talex.page2.ui.main.recycler
+package com.talex.recycler.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.talex.page2.ui.main.recycler.adapter.BaseViewHolder
-import com.talex.page2.ui.main.recycler.adapter.Item
 
 
 abstract class BaseAdapter<T : Item, VH : BaseViewHolder<T>, D : BaseDelegate<T, VH>> : RecyclerView.Adapter<VH>() {

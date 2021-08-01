@@ -10,11 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.talex.benchmark.Counter
 import com.talex.benchmark.FragmentFrameCounter
 import com.talex.page2.R
-import com.talex.page2.ui.main.recycler.BaseDelegate
-import com.talex.page2.ui.main.recycler.BaseAdapter
-import com.talex.page2.ui.main.recycler.ItemAdapter
-import com.talex.page2.ui.main.recycler.adapter.BaseViewHolder
-import com.talex.page2.ui.main.recycler.adapter.Item
+import com.talex.recycler.adapter.ItemAdapter
 import com.talex.page2.ui.main.recycler.firstHolder.FirstDelegate
 import com.talex.page2.ui.main.recycler.secondHolder.SecondDelegate
 

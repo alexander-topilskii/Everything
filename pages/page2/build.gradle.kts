@@ -22,6 +22,7 @@ dependencies {
     implementation(project(":viewModel"))
     implementation(project(":dataProducer"))
     implementation(project(":ui:mybenchmark"))
+    implementation(project(":ui:recycler"))
 
     implementation("androidx.core:core-ktx:1.6.0")
     implementation("androidx.appcompat:appcompat:1.3.0")
