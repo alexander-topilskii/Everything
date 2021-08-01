@@ -10,7 +10,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.talex.benchmark.Counter
 import com.talex.benchmark.FragmentFrameCounter
 import com.talex.page2.R
-import com.talex.page2.ui.main.recycler.MyAdapter
+import com.talex.page2.ui.main.recycler.BaseDelegate
+import com.talex.page2.ui.main.recycler.BaseAdapter
+import com.talex.page2.ui.main.recycler.ItemAdapter
+import com.talex.page2.ui.main.recycler.adapter.BaseViewHolder
+import com.talex.page2.ui.main.recycler.adapter.Item
+import com.talex.page2.ui.main.recycler.firstHolder.FirstDelegate
+import com.talex.page2.ui.main.recycler.secondHolder.SecondDelegate
 
 class Page2Fragment : Fragment(R.layout.main_fragment), Counter by FragmentFrameCounter() {
 
@@ -26,7 +32,10 @@ class Page2Fragment : Fragment(R.layout.main_fragment), Counter by FragmentFrame
         viewModel = ViewModelProvider(this).get(Page2ViewModel::class.java)
     }
 
-    private val myAdapter = MyAdapter()
+    private val myAdapter = ItemAdapter().addDelegates(
+        FirstDelegate(),
+        SecondDelegate()
+    )
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -48,4 +57,3 @@ class Page2Fragment : Fragment(R.layout.main_fragment), Counter by FragmentFrame
         fun newInstance() = Page2Fragment()
     }
 }
-
