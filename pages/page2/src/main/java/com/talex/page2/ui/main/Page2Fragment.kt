@@ -11,7 +11,9 @@ import com.talex.benchmark.Counter
 import com.talex.benchmark.FragmentFrameCounter
 import com.talex.page2.R
 import com.talex.recycler.adapter.ItemAdapter
+import com.talex.recycler.adapter.ItemDecorator
 import com.talex.simpletextholder.SimpleTextDelegate
+import com.talex.userholder.UserDelegate
 
 
 class Page2Fragment : Fragment(R.layout.main_fragment), Counter by FragmentFrameCounter() {
@@ -30,7 +32,8 @@ class Page2Fragment : Fragment(R.layout.main_fragment), Counter by FragmentFrame
 
     private val myAdapter: ItemAdapter = ItemAdapter().apply {
         addDelegates(
-            SimpleTextDelegate()
+            SimpleTextDelegate(),
+            UserDelegate()
         )
     }
 
@@ -39,6 +42,7 @@ class Page2Fragment : Fragment(R.layout.main_fragment), Counter by FragmentFrame
 
         with(view.findViewById<RecyclerView>(R.id.page2_recyclerview)) {
             adapter = myAdapter
+            addItemDecoration(ItemDecorator())
             layoutManager = LinearLayoutManager(context)
         }
 

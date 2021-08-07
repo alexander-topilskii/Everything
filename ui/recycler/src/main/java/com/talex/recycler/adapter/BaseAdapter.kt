@@ -3,11 +3,13 @@ package com.talex.recycler.adapter
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.talex.baseviewholder.BaseDelegate
+import com.talex.baseviewholder.BaseViewHolder
+import com.talex.baseviewholder.Item
 
 
-abstract class BaseAdapter<T : com.talex.baseviewholder.Item, VH : com.talex.baseviewholder.BaseViewHolder<T>, D : BaseDelegate<T, VH>> : RecyclerView.Adapter<VH>() {
+abstract class BaseAdapter<T : Item, VH : BaseViewHolder<T>, D : BaseDelegate<T, VH>> : RecyclerView.Adapter<VH>() {
     var list: List<T> = emptyList()
-     private val delegates = mutableListOf<BaseDelegate<T, VH>>()
+    private val delegates = mutableListOf<BaseDelegate<T, VH>>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
         val delegate = delegates.find { it.isForViewType(viewType) }

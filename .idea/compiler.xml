@@ -11,9 +11,11 @@
       <module name="Recycler.pages.page2" target="11" />
       <module name="Recycler.pages.page3" target="11" />
       <module name="Recycler.ui.benchmark" target="11" />
+      <module name="Recycler.ui.core" target="11" />
       <module name="Recycler.ui.holder.baseViewHolder" target="11" />
       <module name="Recycler.ui.holder.simpleTextHolder" target="11" />
       <module name="Recycler.ui.holder.userHolder" target="11" />
+      <module name="Recycler.ui.imageLoader" target="11" />
       <module name="Recycler.ui.mybenchmark" target="11" />
       <module name="Recycler.ui.recycler" target="11" />
       <module name="Recycler.ui.userHolder" target="11" />

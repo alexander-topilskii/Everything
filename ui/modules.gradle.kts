@@ -1,3 +1,5 @@
 include("ui:mybenchmark")
 include("ui:recycler")
 include("ui:holder")
+include("ui:core")
+include("ui:imageLoader")
