@@ -2,9 +2,10 @@ package com.talex.recycler.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.talex.baseviewholder.BaseDelegate
 
 
-abstract class BaseAdapter<T : Item, VH : BaseViewHolder<T>, D : BaseDelegate<T, VH>> : RecyclerView.Adapter<VH>() {
+abstract class BaseAdapter<T : com.talex.baseviewholder.Item, VH : com.talex.baseviewholder.BaseViewHolder<T>, D : BaseDelegate<T, VH>> : RecyclerView.Adapter<VH>() {
     var list: List<T> = emptyList()
      private val delegates = mutableListOf<BaseDelegate<T, VH>>()
 
@@ -23,14 +24,12 @@ abstract class BaseAdapter<T : Item, VH : BaseViewHolder<T>, D : BaseDelegate<T,
 
     override fun getItemCount() = list.size
 
-    open fun addDelegates(vararg delegates: Any): BaseAdapter<T, VH, D> {
+    open fun addDelegates(vararg delegates: Any) {
         delegates
             .filterIsInstance<BaseDelegate<T, VH>>()
             .forEach { delegate ->
                 this.delegates.add(delegate)
             }
-
-        return this
     }
 
 }

@@ -11,8 +11,8 @@ import com.talex.benchmark.Counter
 import com.talex.benchmark.FragmentFrameCounter
 import com.talex.page2.R
 import com.talex.recycler.adapter.ItemAdapter
-import com.talex.page2.ui.main.recycler.firstHolder.FirstDelegate
-import com.talex.page2.ui.main.recycler.secondHolder.SecondDelegate
+import com.talex.simpletextholder.SimpleTextDelegate
+
 
 class Page2Fragment : Fragment(R.layout.main_fragment), Counter by FragmentFrameCounter() {
 
@@ -28,10 +28,11 @@ class Page2Fragment : Fragment(R.layout.main_fragment), Counter by FragmentFrame
         viewModel = ViewModelProvider(this).get(Page2ViewModel::class.java)
     }
 
-    private val myAdapter = ItemAdapter().addDelegates(
-        FirstDelegate(),
-        SecondDelegate()
-    )
+    private val myAdapter: ItemAdapter = ItemAdapter().apply {
+        addDelegates(
+            SimpleTextDelegate()
+        )
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -43,8 +44,7 @@ class Page2Fragment : Fragment(R.layout.main_fragment), Counter by FragmentFrame
 
         with(viewModel) {
             dataLiveData.observe(viewLifecycleOwner) {
-                myAdapter.list = it
-                myAdapter.notifyDataSetChanged()
+                myAdapter.submitList(it)
             }
         }
     }

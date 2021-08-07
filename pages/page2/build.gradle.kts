@@ -18,7 +18,8 @@ android {
 }
 
 dependencies {
-
+    implementation(project(":ui:holder:simpleTextHolder"))
+    implementation(project(":ui:holder:baseViewHolder"))
     implementation(project(":viewModel"))
     implementation(project(":dataProducer"))
     implementation(project(":ui:mybenchmark"))
