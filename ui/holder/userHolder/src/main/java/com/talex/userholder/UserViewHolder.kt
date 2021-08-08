@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.annotation.LayoutRes
 import com.talex.baseviewholder.BaseViewHolder
 import com.talex.baseviewholder.Item
+import com.talex.core.bindView
 import com.talex.imageloader.ImageLoader
 
 class UserViewHolder(

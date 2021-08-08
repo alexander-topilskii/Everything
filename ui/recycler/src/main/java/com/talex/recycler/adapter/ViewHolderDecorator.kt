@@ -3,11 +3,9 @@ package com.talex.recycler.adapter
 import android.graphics.Rect
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.talex.baseviewholder.BaseDelegate
 import com.talex.baseviewholder.BaseViewHolder
-import com.talex.baseviewholder.Item
 
-class ItemDecorator<T : Item, VH : BaseViewHolder<T>, D : BaseDelegate<T, VH>>
+class ViewHolderDecorator
     : RecyclerView.ItemDecoration() {
 
     override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {

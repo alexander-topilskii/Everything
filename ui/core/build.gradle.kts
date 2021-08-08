@@ -31,7 +31,6 @@ android {
 }
 
 dependencies {
-
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:+")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:+")
     implementation("androidx.core:core-ktx:1.6.0")

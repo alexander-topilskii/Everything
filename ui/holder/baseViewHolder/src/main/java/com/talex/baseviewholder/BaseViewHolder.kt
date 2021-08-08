@@ -15,12 +15,6 @@ abstract class BaseViewHolder<T : Item>(
     LayoutInflater.from(viewGroup.context).inflate(id, viewGroup, false)
 ) {
 
-    fun <ViewT : View> bindView(@IdRes idRes: Int): Lazy<ViewT> {
-        return lazy {
-            itemView.findViewById(idRes)
-        }
-    }
-
     open fun decorate(outRect: Rect, data: Item) = Unit
 
     abstract fun onBind(data: T)

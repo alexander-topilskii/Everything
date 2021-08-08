@@ -1,10 +1,10 @@
 package com.talex.core
 
 import android.app.Activity
-import android.content.Context
 import android.view.View
 import androidx.annotation.IdRes
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
 
 
 fun <ViewT : View> Activity.bindView(@IdRes idRes: Int): Lazy<ViewT> {
@@ -25,5 +25,11 @@ fun <ViewT : View> Fragment.bindView(@IdRes idRes: Int): Lazy<ViewT> {
     }
 }
 
+fun <ViewT : View> RecyclerView.ViewHolder.bindView(@IdRes idRes: Int): Lazy<ViewT> {
+    return lazyUnsychronized {
+        itemView.findViewById(idRes)
+    }
+}
+
 fun <T> lazyUnsychronized(initializer: () -> T): Lazy<T> =
-    lazy(LazyThreadSafetyMode.SYNCHRONIZED, initializer)
+    lazy(LazyThreadSafetyMode.NONE, initializer)
