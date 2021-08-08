@@ -15,7 +15,7 @@ abstract class BaseViewHolder<T : Item>(
     LayoutInflater.from(viewGroup.context).inflate(id, viewGroup, false)
 ) {
 
-    open fun decorate(outRect: Rect, data: Item) = Unit
+    open fun decorate(outRect: Rect, data: Item?) = Unit
 
     abstract fun onBind(data: T)
 

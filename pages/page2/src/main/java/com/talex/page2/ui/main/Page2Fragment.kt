@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.talex.benchmark.Counter
 import com.talex.benchmark.FragmentFrameCounter
 import com.talex.page2.R
+import com.talex.recycler.adapter.AwesomeLayoutManager
 import com.talex.recycler.adapter.ItemAdapter
 import com.talex.recycler.adapter.ViewHolderDecorator
 import com.talex.simpletextholder.SimpleTextDelegate
@@ -43,7 +44,7 @@ class Page2Fragment : Fragment(R.layout.main_fragment), Counter by FragmentFrame
         with(view.findViewById<RecyclerView>(R.id.page2_recyclerview)) {
             adapter = myAdapter
             addItemDecoration(ViewHolderDecorator())
-            layoutManager = LinearLayoutManager(context)
+            layoutManager = AwesomeLayoutManager(context)
         }
 
         with(viewModel) {

@@ -28,7 +28,7 @@ class UserViewHolder(
         ImageLoader.load(data.imageUrl, image)
     }
 
-    override fun decorate(outRect: Rect, data: Item) {
+    override fun decorate(outRect: Rect, data: Item?) {
         super.decorate(outRect, data)
 
         outRect.bottom = 20

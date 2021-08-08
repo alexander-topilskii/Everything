@@ -14,7 +14,8 @@ class ViewHolderDecorator
         val currentPosition = parent.getChildAdapterPosition(view)
         val viewHolder = parent.findViewHolderForAdapterPosition(currentPosition)
 
-        val data = (parent.adapter as BaseAdapter<*, *, *>).list[currentPosition]
+
+        val data = (parent.adapter as BaseAdapter<*, *, *>).list.getOrNull(currentPosition)
 
         if (viewHolder is BaseViewHolder<*>) {
             viewHolder.decorate(outRect, data)
